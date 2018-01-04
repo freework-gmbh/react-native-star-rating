@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import update from 'react-addons-update';
+import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
 
 // Third party imports
 import Button from 'react-native-button';
@@ -20,6 +21,9 @@ import MaterialIconsIcons from 'react-native-vector-icons/MaterialIcons';
 import OcticonsIcons from 'react-native-vector-icons/Octicons';
 import ZocialIcons from 'react-native-vector-icons/Zocial';
 import MaterialCommunityIconsIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import FreeworkIcoMoonConfig from './freework-icons.json';
+
+const FreeworkIcons = createIconSetFromIcoMoon(FreeworkIcoMoonConfig);
 
 const iconSets = {
   Entypo: EntypoIcons,
@@ -31,6 +35,7 @@ const iconSets = {
   Octicons: OcticonsIcons,
   Zocial: ZocialIcons,
   MaterialCommunityIcons: MaterialCommunityIconsIcons,
+  Freework: FreeworkIcons,
 };
 
 class StarButton extends Component {
